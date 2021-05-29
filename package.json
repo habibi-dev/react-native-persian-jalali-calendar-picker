@@ -1,0 +1,44 @@
+{
+  "name": "react-native-jalali-calendar-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habibi-dev/-react-native-jalali-calendar-picker.git"
+  },
+  "keywords": [
+    "jalali calendar",
+    "persian calendar",
+    "farsi calendar",
+    "calendar",
+    "picker",
+    "calendar",
+    "picker",
+    "date",
+    "picker",
+    "day",
+    "picker"
+  ],
+  "author": "Amir Hossein Habibi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/habibi-dev/-react-native-jalali-calendar-picker/issues"
+  },
+  "homepage": "https://github.com/habibi-dev/-react-native-jalali-calendar-picker#readme",
+  "maintainers": [
+    {
+      "name": "Amir Hossein Habibi",
+      "email": "habibi.dev@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "react-native": "^0.64.1"
+  },
+  "devDependencies": {
+    "moment-jalaali": "^0.9.2"
+  }
+}

@@ -1,5 +1,5 @@
-import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
-import React, {useState} from 'react';
+import { Text, TouchableOpacity, View} from 'react-native';
+import React from 'react';
 import moment from 'moment-jalaali';
 
 const main_style = {

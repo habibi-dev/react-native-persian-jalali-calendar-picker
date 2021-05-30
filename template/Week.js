@@ -39,7 +39,8 @@ export default (props) => {
     return (
         <View style={[main_style.wrap, weekStyleWrap]}>
             {
-                weeks.map(week => (<Text style={[main_style.text, weekStyleText]}>{week}</Text>))
+                weeks.map((week, index) =>
+                    (<Text style={[main_style.text, weekStyleText]} key={index}>{week}</Text>))
             }
         </View>
     );

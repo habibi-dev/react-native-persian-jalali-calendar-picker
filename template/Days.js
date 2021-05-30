@@ -81,9 +81,9 @@ const GenerateDays = (props) => {
         i++;
     }
 
-    Object.keys(days).map(w => {
-            element.push(<View style={[main_style.wrap, weekStyleWrap]}>{
-                days[w].map(day => {
+    Object.keys(days).map((w, index) => {
+            element.push(<View style={[main_style.wrap, weekStyleWrap]} key={index}>{
+                days[w].map((day, index) => {
 
                     const
                         timestamp = parseInt(moment(`${years}/${month}/${day} 00:00`, 'jYYYY/jMM/jDD HH:mm').format('X')),
@@ -99,7 +99,7 @@ const GenerateDays = (props) => {
                         ? [main_style.SelectedStyle, {backgroundColor: primaryColor}] : {};
 
                     // Check is today
-                    const TodayStyle = moment().format('jYYYY/jMM/jDD') === `${years}/${month}/${day}`
+                    const TodayStyle = current === `${years}/${month}/${day}`
                         ? main_style.TodayStyle : {};
 
                     // Check is set minimum date
@@ -115,7 +115,8 @@ const GenerateDays = (props) => {
                     }
 
                     return (
-                        <TouchableOpacity onPress={() => Selected(MaxStyle, MinStyle, setSelected, years, month, day)}>
+                        <TouchableOpacity onPress={() => Selected(MaxStyle, MinStyle, setSelected, years, month, day)}
+                                          key={index}>
                             <Text style={[
                                 main_style.text, weekStyleText, color,
                                 TodayStyle, MinStyle, MaxStyle, SelectedStyle]}>

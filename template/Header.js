@@ -22,6 +22,12 @@ const main_style = {
         fontFamily: 'Shabnam-Bold-FD',
         fontSize: 15,
     },
+    textClock: {
+        padding: 2,
+        color: '#666',
+        fontFamily: 'Shabnam-Light-FD',
+        fontSize: 13,
+    },
 };
 
 export default (props) => {
@@ -30,7 +36,8 @@ export default (props) => {
         headerStyleText = {},
         headerStyleTextCenter = {},
         headerStyleWrapCenter = {},
-        previousMonth, nextMonth, current,
+        headerStyleTextClock = {},
+        Time, previousMonth, nextMonth, current, setActive, currentTime,
     } = props;
 
     return (
@@ -39,11 +46,18 @@ export default (props) => {
                 <Text style={[main_style.text, headerStyleText]}>ماه بعد</Text>
             </TouchableOpacity>
             <View style={[main_style.wrapCenter, headerStyleWrapCenter]}>
-                <TouchableOpacity>
+                {Time ? (
+                    <TouchableOpacity onPress={() => setActive('clock')}>
+                        <Text style={[main_style.textClock, headerStyleText, headerStyleTextClock]}>
+                            {currentTime} - </Text>
+                    </TouchableOpacity>
+                ) : null}
+
+                <TouchableOpacity onPress={() => setActive('years')}>
                     <Text style={[main_style.textCenter, headerStyleText, headerStyleTextCenter]}>
                         {current.format('jYYYY')}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => setActive('month')}>
                     <Text style={[main_style.textCenter, headerStyleText, headerStyleTextCenter]}>
                         {current.format('jMMMM')}</Text>
                 </TouchableOpacity>

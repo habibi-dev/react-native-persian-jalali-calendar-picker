@@ -1,4 +1,11 @@
 # React Native Persian Jalali Calendar Picker 📆
+![npm bundle size](https://img.shields.io/bundlephobia/min/react-native-persian-jalali-calendar-picker)
+![npm](https://img.shields.io/npm/dw/react-native-persian-jalali-calendar-picker)
+![npm](https://img.shields.io/npm/l/react-native-persian-jalali-calendar-picker)
+![npm](https://img.shields.io/npm/v/react-native-persian-jalali-calendar-picker)
+![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/habibi-dev/react-native-persian-jalali-calendar-picker)
+![GitHub issues](https://img.shields.io/github/issues/habibi-dev/react-native-persian-jalali-calendar-picker)
+
 Jalali Calendar Picker component for react native.
 
 ## Installation

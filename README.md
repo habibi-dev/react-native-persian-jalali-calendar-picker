@@ -2,10 +2,10 @@
 The package is both **Android** and **iOS** compatible.
 
 <div style="display:flex;flex-wrap:wrap">
-<img width="350" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/calender.png" />
-<img width="350" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/clock.png" />
-<img width="350" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/month.png" />
-<img width="350" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/years.png" />
+<img width="330" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/calender.png" />
+<img width="330" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/clock.png" />
+<img width="330" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/month.png" />
+<img width="330" src="https://raw.githubusercontent.com/habibi-dev/react-native-persian-jalali-calendar-picker/master/demo/years.png" />
 </div>
 
 

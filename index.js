@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import moment from 'moment-jalaali';
 import Template from './Tepmlate';
+import fa from 'moment/src/locale/fa';
+
+moment.locale('fa', fa);
+moment.loadPersian({dialect: 'persian-modern'});
 
 export default class JalaliCalendarPicker extends Component {
 
